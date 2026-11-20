@@ -3,7 +3,7 @@ import anthropic
 client = anthropic.Anthropic()
 
 SYSTEM_PROMPT = """You summarize support tickets. Read the ticket and write a summary.
-The summary should be useful for the support team. Mention important things."""
+The summary should be useful for the support team. Mention important things like the customer plan, urgency and what they already tried."""
 
 
 def summarize_ticket(ticket_text: str) -> str:
