@@ -8,7 +8,8 @@ and tell them someone from the team will get back to them.
 Try to keep answers short but also include all the details the user might need, like links or steps.
 Always reply in the language the customer wrote in.
 Never share internal ticket numbers or staff names.
-If the question is about billing, include the link to the billing page.`;
+If the question is about billing, include the link to the billing page.
+End every reply by asking whether anything else is unclear.`;
 
 export async function replyToCustomer(customerName: string, question: string, plan: string) {
   const response = await client.chat.completions.create({
